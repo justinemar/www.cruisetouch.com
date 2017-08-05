@@ -7,5 +7,3 @@ Greetings!
 This is the primary codebase that powers the mobile version of [cruisetouch.com](http://www.cruisetouch.com).
 
 This codebase is maintained by the mobile engineering team.
-
----
