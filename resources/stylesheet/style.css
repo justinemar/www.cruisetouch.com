@@ -1,0 +1,179 @@
+html,
+
+
+body {
+  margin: 0px;
+  background-color: #ecf0f1;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.frame-wrap {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-top: -306px;
+  border-radius: 5px;
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-frame {
+  width: 848px;
+  transition: .6s cubic-bezier(.3, 0, 0, 1.3);
+  margin-left: -560px;
+}
+
+.card {
+  width: 282px;
+  height: 350px;
+  transition: 0.8s;
+  overflow: hidden;
+  display: inline-block;
+  padding-top: 7%;
+  padding-bottom: 10%;
+  margin-left: -5px;
+}
+
+.sky{
+  background-color: #15C1C8;
+}
+
+.mediumb {
+  background-color: #153649;
+}
+
+.green {
+  background-color: #07ad8e;
+}
+
+.icon {
+  width: 35%;
+}
+
+.title {
+  margin: 15px;
+  color: white;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.text {
+  margin: 0px;
+  width: 70%;
+  font-size: 0.95em;
+  color: white;
+  font-weight: 300;
+  opacity: 0.9;
+  line-height: 1.5em;
+  height: 110px;
+}
+
+.nav {
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 25%;
+}
+
+.nav div {
+  margin: 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.active {
+  background-color: white !important;
+}
+
+.nav-direction {
+  height: 10%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.button {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin-right: -4px;
+  transition: 0.5s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.left {
+  margin-left: -4px;
+}
+
+.navicon {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: 'Material Icons';
+  font-size: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.center > .navicon {
+  font-size: 1.2em
+}
+
+.start {
+  margin-bottom: 3vh;
+  width: 40%;
+  height: 30px;
+  border: 2px rgba(255, 255, 255, 0.3);
+  border-style: solid;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.6em;
+  transition: 0.5s;
+  cursor: pointer;
+  font-weight: 800;
+  margin-top: 10%;
+}
+
+.start:hover {
+  background-color: white;
+  color: #ff4f57;
+}
