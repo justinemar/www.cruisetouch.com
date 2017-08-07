@@ -1,53 +1,70 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <title>Cruisetouch</title>
-    <link rel="stylesheet" href="./resources/stylesheet/style.css" type="text/css" />
+    <link rel="stylesheet" href="./resources/stylesheet/style.css" />
+    <script type="text/javascript" src="./scripts/main.js"></script>
 
-    </head>
+<!-- 
+/---------------------------------\
+[Instructions for future changes]
+\---------------------------------/
 
-<body>
-   <center>
-  <div class="frame-wrapper">
-    <div class="main-frame">
-      <div class="card sky">
-        <img class="icon" src="">
-        <p class="title">TITLE1</p>
-        <p class="text">Integer quis metus malesuada orci tempus tempus ac vitae nulla.</p>
-      </div>
-      <div class="card mediumb">
-        <img class="icon" src="">
-        <p class="title">TITLE2</p>
-        <p class="text">Donec tempus justo eu ex fermentum eleifend.</p>
-      </div>
-      <div class="card green">
-        <img class="icon" src="">
-        <p class="title">TITLE3</p>
-        <p class="text">Ut malesuada, lorem sed facilisis interdum, eros nisl porta metus, ac euismod arcu.</p>
-        <div class="start">CONTINUE</div>
-      </div>
-    </div>
-    <div class="nav">
-      <div class="nav1"></div>
-      <div class="nav2"></div>
-      <div class="nav3 active"></div>
-    </div>
-    <div class="nav-direction">
-      <div class="button left">
-        <p class="navicon"><</p>
-      </div>
-      <div class="button right">
-        <p class="navicon">></p>
-      </div>
-    </div>
-  </div>
-</center>
+-Adding new slides
+  * To add new slide create an img tag with id 'img++' 
+    e.g ( <img id="img4" src="image.png"/>)
 
+-Adding new slide position indicator
+  * Same with adding new slides. Simply create a new li tag with id 's++' 
+    e.g (<li id="s4"></li>) this is in index based 0,1,2,3,4,5... 
+-->
+
+</head>
+
+<body onload="Load()">
+    <div id="onboard">
+        <div id="slide-cards">
+    
+            <!-- here you have to add the img tag -->
+           
+            <div id="card-3" class="card"><h1 id="cardTitle">Here at cruisetouch!</h1>
+            <p> You can find people that have the same interest as you!</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. .</p></div>
+            <div id="card-2" class="card"><h1 id="cardTitle">YOUR PLANS</h1>
+            <p> You can find people that have the same interest as you!</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. .</p></div>
+            <div id="card-1" class="card"><h1 id="cardTitle">WE GOT YOU!</h1>
+            <p> You can find people that have the same interest as you!</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. .</p>
+            <div class="continue">BOARD!</div>
+            </div>
+        </div>
+        <!--Here is going to be the left right buttons, the info and the imgs shown-->
+        <div id="frame">
+
+            <div id="slidePos-wrap">
+                <div id="slidePos-container">
+                    <ul id="slidePos">
+                        <li id="s0"></li>
+                        <li id="s1"></li>
+                        <li id="s2"></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- the left and right button -->
+            <div id="slideNav">
+               <p id="left" onclick="prev()"><</p>
+               <p id="right" onclick="next()">></p>
+            </div>
+        
+          
+        </div>
+    </div>
 </body>
-
-
-
-
 </html>
