@@ -10,6 +10,7 @@ body{
     left:0;
     transition: 1s;
     visibility:hidden;
+    transition: 0.5s;
 }
 #slide-cards #card-1
 {
