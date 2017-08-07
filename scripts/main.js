@@ -1,9 +1,9 @@
-var nrCard = 3;  //the number of img , I only have 3 
-        var IntSeconds = 4;     //the seconds between the imgs
+var nrCard = 3;  //the number of cards, I only have 3 
+        var IntSeconds = 4;     //the seconds between the slides
 
         function Load()
         {
-            nrShown = 0;    //the img visible
+            nrShown = 0;    
             Vect = new Array(nrCard + 10);
             Vect[0] = document.getElementById("card-1");
             Vect[0].style.visibility = "visible";
@@ -49,12 +49,12 @@ var nrCard = 3;  //the number of img , I only have 3
             clearInterval(mytime);
             mytime = setInterval(Timer, IntSeconds * 1000);
         }
-        //here changes the img + effect
+      
         function Effect()
         {
             for (var i = 0; i < nrCard; i++)
             {
-                Vect[i].style.opacity = "0";   //to add the fade effect
+                Vect[i].style.opacity = "0";  
                 Vect[i].style.visibility = "hidden";
 
                 document.getElementById("s" + i).style.backgroundColor = "rgba(0, 0, 0, 0.70)";
