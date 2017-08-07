@@ -47,6 +47,7 @@ body{
 
 /* Continue */
 .continue {
+  margin: 0 auto;
   margin-bottom: 3vh;
   width: 40%;
   height: 30px;
