@@ -1,3 +1,7 @@
+body{
+    font-family: 'Segoe UI';
+    background-color: #E5E5E5;
+}
 *{
     box-sizing: content-box;
     margin:0;
@@ -52,12 +56,18 @@
     color: #ffffff;
 }
 #add-friend-btn,#send-msg-btn{
-    background-color: #101B25;
+    background-color: #FC6042;
     width: 150px;
     border-radius: 40px;
     padding: 5px;
     font-family: 'Open-sans';
+    cursor: pointer;
 }
+#add-friend-btn:active,#send-msg-btn:active{
+    background-color: #d05f49;
+}
+
+
 .left{
     float: left;
 }
@@ -67,17 +77,54 @@
 
 .profile-tabs{
     position: absolute;
-    background-color: rgba(16, 27, 37, 0.39);
+    background-color: rgba(0, 0, 0, 0.39);
     width: 100%;
     /* margin-top: 4%; */
     /* height: 100%; */
     bottom: 0px;
+    box-shadow: 1px 1px 12px 0px #CDCFCD;
+    
 }
 .tabs-inline{
     display: inline-block;
     color: #ffffff;
     margin-left: 2%;
     margin-right: 2%;
-    border-top: 1px solid #101B25;
+    cursor: pointer;
+}
+
+.tabs-inline:active{
+    color: silver;
+}
+
+
+/* ------------------ SECTION ---------------------- */
+
+#profile-content{
+    text-align: center;
+    background-color: #ffffff;
+    margin-top: 4%;
+}
+.left{
+    
+}
+.a-post-user-profile-photo-wrap img{
+    width: 67px;
+    height: 67px;
+}
+
+.p-item-inline{
+    display: inline-block;
+}
+
+.a-post-interaction{
+    width: 150px;
    
+}
+
+.a-post-interaction-left{
+    float: left;
+}
+.a-post-interaction-right{
+    float: right;
 }
