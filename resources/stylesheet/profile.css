@@ -5,12 +5,15 @@
 }
 
 #profile-header{
-    height: 100%;
+    position:relative;
+    height: 320px;
     background-repeat: no-repeat;
-    background-size: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
     margin-bottom: 0;
-    background-image: url("../../resources/images/profile-cover.gif");
-    opacity: 0.98;
+    background-image: url("http://cdn.wallpapersafari.com/71/36/JPEBlv.jpg");
+    opacity: 0.9;
 }
 
 #profile-photo-wrap{
@@ -19,7 +22,7 @@
     
 }
 #profile-photo-wrap img{
-    margin-top: 10%;
+    margin-top: 2%;
 }
 .profile-info-wrap{
     text-align: center;
@@ -38,4 +41,43 @@
 .info-inline{
     display: inline-block;
     margin-left: 5px;
+}
+
+.profile-main-btn{
+    width: 330px;
+    position: relative;
+    margin: 0 auto;
+    clear: both;
+    margin-bottom: 35px;
+    color: #ffffff;
+}
+#add-friend-btn,#send-msg-btn{
+    background-color: #101B25;
+    width: 150px;
+    border-radius: 40px;
+    padding: 5px;
+    font-family: 'Open-sans';
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+.profile-tabs{
+    position: absolute;
+    background-color: rgba(16, 27, 37, 0.39);
+    width: 100%;
+    /* margin-top: 4%; */
+    /* height: 100%; */
+    bottom: 0px;
+}
+.tabs-inline{
+    display: inline-block;
+    color: #ffffff;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-top: 1px solid #101B25;
+   
 }
