@@ -1,6 +1,15 @@
+/*GLOBAL */
 body{
     font-family: 'Segoe UI';
     background-color: #E5E5E5;
+}
+a{
+    color: #3E6BB3;
+    font-weight: 500;
+    text-decoration: none;
+}
+h2{
+    font-size: 1.2em !important;
 }
 *{
     box-sizing: content-box;
@@ -48,7 +57,7 @@ body{
 }
 
 .profile-main-btn{
-    width: 330px;
+    width: 320px;
     position: relative;
     margin: 0 auto;
     clear: both;
@@ -57,7 +66,7 @@ body{
 }
 #add-friend-btn,#send-msg-btn{
     background-color: #FC6042;
-    width: 150px;
+    width: 120px;
     border-radius: 40px;
     padding: 5px;
     font-family: 'Open-sans';
@@ -103,28 +112,45 @@ body{
 #profile-content{
     text-align: center;
     background-color: #ffffff;
-    margin-top: 4%;
+    margin-top: 0;
+    padding: 25px;
 }
-.left{
-    
-}
+
 .a-post-user-profile-photo-wrap img{
     width: 67px;
     height: 67px;
 }
-
+.a-post-user-profile-name{
+    position: absolute;
+    margin-left: 10px;
+    
+}
 .p-item-inline{
     display: inline-block;
 }
 
-.a-post-interaction{
-    width: 150px;
-   
+
+.fa-heart{
+ color:#3E6BB3;   
 }
 
-.a-post-interaction-left{
-    float: left;
+#wrap-user-main-detail{
+    margin-right: 60%;
+    padding: 10px;
 }
-.a-post-interaction-right{
-    float: right;
+
+.a-post-textarea{
+    color: #7F7F7F;
+    margin-bottom: 4%;
+}
+#a-post-like-count{
+        margin-top: -1%;
+}
+.user-interactions{
+
+}
+.interaction-inline{
+    display: inline-block !important;
+    text-align: center;
+    vertical-align: middle;
 }

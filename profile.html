@@ -4,6 +4,7 @@
         <meta author="Justine Cantado"
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="./resources/stylesheet/profile.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     </head>
     
     
@@ -46,26 +47,32 @@
                 
             <div class="a-post"> <!-- Using class to target existing posts -->
             <div class="a-post-details">
+                
+                <div id="wrap-user-main-detail">
                 <div class="a-post-user-profile-photo-wrap p-item-inline">
                 <img src="./resources/images/lauren-profile.png"/>
                 </div>
-                <div class="a-post-user-profile-name p-item-inline"><h2>Lauren Reyes</h2></div>
+                <div class="a-post-user-profile-name p-item-inline"><h2>Lauren Reyes</h2>
+                <span id="user-profile-title">Traveller</span>
+                </div>
+                </div>
+                
                 <div class="a-post-textarea">
                     <p>Had an awesome trip to hawaii, got to hike the Haiku Stairs...!!</p>
                 </div>  
+                <hr>
+               <div class="user-interactions">
+                  <i class="fa fa-heart" class="interaction-inline" aria-hidden="true">
+                  </i>
+                  
+                  <div id="users-liked-this" class="interaction-inline">
+                  <img src="./resources/images/like-by-example.png"/>
+                  </div>
+                  
+                  <div id="a-post-like-count" class="interaction-inline">16 likes</div>
+               </div>
+                <hr>
                 
-                <div class="a-post-interaction a-post-interaction-left">
-                    <div id="heart" class="left p-item-inline"> heart_symbol </div>
-                    <div class="a-post-likes">
-                        
-                    </div>
-                    <span id="a-post-count-likes" class="p-item-inline">6 likes</span>
-                </div>
-                
-                <div class="a-post-interaction a-post-interaction-right">
-                    <div id="share" class="right p-item-inline">Share</div>
-                    <span id="a-post-count-share" class="p-item-inline">1 Share</span>
-                </div>
             </div>
             
             </div>
