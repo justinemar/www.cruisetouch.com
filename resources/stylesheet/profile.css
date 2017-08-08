@@ -11,10 +11,14 @@ a{
 h2{
     font-size: 1.2em !important;
 }
+
 *{
     box-sizing: content-box;
     margin:0;
     padding: 0;
+}
+hr{
+    opacity: 0.6;
 }
 
 #profile-header{
@@ -132,6 +136,7 @@ h2{
 
 .fa-heart{
  color:#3E6BB3;   
+ font-size: 20px !important;
 }
 
 #wrap-user-main-detail{
@@ -143,14 +148,27 @@ h2{
     color: #7F7F7F;
     margin-bottom: 4%;
 }
-#a-post-like-count{
-        margin-top: -1%;
+#a-post-like-count{ /* Can be clickable to show other users who like the post? */
+        font-size:0.725rem;
+        margin-top: -0.5%;
+        color: #3E6BB3;
+        border-bottom: 1px solid rgb(172, 182, 197);
+        cursor: pointer;
 }
 .user-interactions{
-
+        width: 100%;
+        margin:0 auto;
 }
+#like-info{
+    margin-right: 16%;
+}
+#share-btn{
+   margin-top: -0.5%;
+}
+
 .interaction-inline{
     display: inline-block !important;
     text-align: center;
     vertical-align: middle;
 }
+
