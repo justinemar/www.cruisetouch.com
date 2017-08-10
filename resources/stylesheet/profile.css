@@ -1,10 +1,16 @@
 /*GLOBAL */
+
 body{
     font-family: 'Segoe UI';
     background-color: #E5E5E5;
+    background-color: #ffffff;
+}
+p{
+    margin: 0;
+    padding: 0;
 }
 a{
-    color: #3E6BB3;
+    color: #30a0f1;
     font-weight: 500;
     text-decoration: none;
 }
@@ -15,6 +21,10 @@ a{
 }
 hr{
     opacity: 0.4;
+}
+
+.active-tab{
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 #profile-header{
@@ -67,17 +77,20 @@ hr{
     color: #ffffff;
 }
 #add-friend-btn,#send-msg-btn{
-    background-color: #3B3F51;
+    background-image: -webkit-linear-gradient(#0072a7 0%, #54b8ff 100%);
+    background-image: -moz-linear-gradient(#0072a7 0%, #54b8ff 100%);
+    background-image: -o-linear-gradient(#0072a7 0%, #54b8ff 100%);
+    background-image: linear-gradient(#0072a7 0%, #54b8ff 100%);
     width: 120px;
     border-radius: 40px;
     padding: 5px;
     font-family: 'Open-sans';
     cursor: pointer;
-    border: 1px solid #898a92 !important;
+    border: 1px solid #afb1bd !important;
     
 }
 #add-friend-btn:active,#send-msg-btn:active{
-    background-color: #5c5d65;
+    background-image: linear-gradient(#0072a7 0%, #4d86af 100%);
 }
 
 
@@ -110,8 +123,17 @@ hr{
     color: silver;
 }
 
+.counter{
+    font-weight: 400;
+}
 
 /* ------------------ SECTION ---------------------- */
+.a-post{
+    background: #ffffff;
+    padding: 10px;
+    margin-top: 35px;
+    border: 1px solid rgba(128, 128, 128, 0.21);
+}
 #post-comment-textarea-wrap{
     padding: 15px;
     margin-left: -45px;
@@ -119,11 +141,31 @@ hr{
 }
 #profile-content{
     text-align: center;
-    background-color: #ffffff;
+    background-color: #F8F8F8;
     margin-top: 0;
-    padding: 25px;
+
+}
+#user-profile-title,#post-detail{
+    font-size: 12px;
 }
 
+#post-detail{
+    float:right;
+    color: black;
+    font-weight: 700;
+    
+}
+#post-profile-name{
+    font-weight: 400 !important;
+}
+.posted-detail{
+    padding: 10px;
+    margin-bottom: 7%;
+    margin-top: 1%;
+}
+.a-post-details{
+    margin-bottom: 100px;
+}
 .a-post-user-profile-photo-wrap img{
     width: 67px;
     height: 67px;
@@ -137,7 +179,13 @@ hr{
     display: inline-block;
 }
 
-
+#comment-post-detail{
+    margin-left: 1%;
+    font-size: 15px;
+    font-family: Segoe UI;
+    color: rgba(0, 0, 0, 0.62);
+    float: right;
+}
 .fa-heart{
  color:#3E6BB3;   
  font-size: 20px !important;
@@ -152,7 +200,6 @@ hr{
     text-align:justify;
     color: #6f6a6a;
     margin-bottom: 4%;
-    letter-spacing: 1px;
 }
 #a-post-like-count{ /* Can be clickable to show other users who like the post? */
         font-size:0.725rem;
@@ -191,7 +238,20 @@ hr{
     display: inline-flex;
     margin-top: 2%;
     position: absolute;
-    margin-left: 60%;
+    margin-left: 61%;
+    border: 0;
+    padding: 10px;
+    background-color: #7d8286;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12px;
+}
+#upload-picture{
+    border-radius: 15%;
+    display: inline-flex;
+    margin-top: 2%;
+    position: absolute;
+    margin-left: 61%;
     border: 0;
     padding: 10px;
     background-color: #7d8286;
@@ -213,6 +273,7 @@ hr{
     color: rgba(0, 0, 0, 0.62);
     float:left;
 }
+
 .a-comment-detail-photo{
     width: 50px;
     height: 50px;
@@ -225,6 +286,53 @@ hr{
     text-align:justify;
     color: #6f6a6a;
     margin-bottom: 4%;
-    letter-spacing: 1px;
     margin-top: 2%;
+}
+
+
+
+/* Friends tab */
+.lists{
+    margin-left: -80%;
+    margin-top: 5%;
+}
+input[type="text"]{
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 5px;
+
+}
+
+#user-details-wrap{
+    display: inline-flex;
+}
+#user-photo-wrap{
+    display: inline-block;
+}
+#user-photo-wrap img{
+    width: 50px;
+    height: 50px;
+}
+#user-profile-details{
+    position: absolute;
+    margin-left: 60px;
+}
+#status{
+    border-radius: 5%;
+    border: 0;
+    background: #4C9F60;
+    font-size: 1.2em;
+    color: #ffffff;
+    padding: 5px;
+    position: absolute;
+    margin-left: 65%;
+    display: inline-flex;
+}
+
+.search-friend-bar{
+    padding: 15px;
+}
+#friendsTab-user-name{
+    font-family: "Segoe UI", "Sans-serif";
+    font-weight: lighter;
 }
