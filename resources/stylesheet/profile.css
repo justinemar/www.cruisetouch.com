@@ -149,9 +149,9 @@ hr{
 }
 
 .a-post-textarea{
+    text-align:justify;
     color: #6f6a6a;
     margin-bottom: 4%;
-    text-align: center;
     letter-spacing: 1px;
 }
 #a-post-like-count{ /* Can be clickable to show other users who like the post? */
@@ -200,9 +200,6 @@ hr{
     font-size: 12px;
 }
 
-.comment-details{
-    width: 250px;
-}
 #comment-1{
     padding: 20px;
 }
@@ -210,14 +207,24 @@ hr{
     display: inline-flex;
 }
 .user-profile-name{
-    position: absolute;
     margin-left: 1%;
     font-weight: 500;
     font-family: Segoe UI;
     color: rgba(0, 0, 0, 0.62);
+    float:left;
 }
 .a-comment-detail-photo{
     width: 50px;
     height: 50px;
+    float: left;
 }
 
+
+.comment-textarea{
+    display: inline-block;
+    text-align:justify;
+    color: #6f6a6a;
+    margin-bottom: 4%;
+    letter-spacing: 1px;
+    margin-top: 2%;
+}
