@@ -18,7 +18,7 @@ h2{
     padding: 0;
 }
 hr{
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 #profile-header{
@@ -75,6 +75,8 @@ hr{
     padding: 5px;
     font-family: 'Open-sans';
     cursor: pointer;
+    border: 1px solid #f74712 !important;
+    
 }
 #add-friend-btn:active,#send-msg-btn:active{
     background-color: #d05f49;
@@ -172,3 +174,6 @@ hr{
     vertical-align: middle;
 }
 
+#profile-of-viewer-container{
+    display: inline-block !important;
+}
