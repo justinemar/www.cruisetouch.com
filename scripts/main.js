@@ -1,5 +1,8 @@
-var nrCard = 3;  //the number of cards, I only have 3 
-        var IntSeconds = 4;     //the seconds between the slides
+       
+       
+       /*cards*/
+       var nrCard = 3; 
+        var IntSeconds = 4;
 
         function Load()
         {
@@ -65,3 +68,5 @@ var nrCard = 3;  //the number of cards, I only have 3
             document.getElementById("s" + nrShown).style.backgroundColor = "rgba(255, 255, 255, 0.90)";
            
         }
+
+

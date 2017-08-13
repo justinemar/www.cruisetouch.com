@@ -79,10 +79,10 @@ hr{
     color: #ffffff;
 }
 #add-friend-btn,#send-msg-btn{
-    background-image: -webkit-linear-gradient(#eca436 0%, #d84e2f 100%);
-    background-image: -moz-linear-gradient(#eca436 0%, #d84e2f 100%);
-    background-image: -o-linear-gradient(#eca436 0%, #d84e2f 100%);
-    background-image: linear-gradient(#eca436 0%, #d84e2f 100%);
+background-image: -webkit-linear-gradient(#323359 0%, #27273F 100%);
+background-image: -moz-linear-gradient(#323359 0%, #27273F 100%);
+background-image: -o-linear-gradient(#323359 0%, #27273F 100%);
+background-image: linear-gradient(#323359 0%, #27273F 100%);
     width: 120px;
     border-radius: 40px;
     padding: 5px;
@@ -92,10 +92,11 @@ hr{
     
 }
 #add-friend-btn:active,#send-msg-btn:active{
-    background-image: -webkit-linear-gradient(#a77400 0%, #af6d4d 100%);
-    background-image: -moz-linear-gradient(#a77400 0%, #af6d4d 100%);
-    background-image: -o-linear-gradient(#a77400 0%, #af6d4d 100%);
-    background-image: linear-gradient(#a77400 0%, #af6d4d 100%);
+
+background-image: -webkit-linear-gradient(#464775 0%, #2e2e4a 100%);
+background-image: -moz-linear-gradient(#464775 0%, #2e2e4a 100%);
+background-image: -o-linear-gradient(#464775 0%, #2e2e4a 100%);
+background-image: linear-gradient(#464775 0%, #2e2e4a 100%);
 }
 
 
@@ -328,6 +329,9 @@ hr{
     margin-top: 5px;
     width: 70px;
 }
+#friend-tab-content{
+    background-color: #eaeaea;
+}
 #friendTab-profile-name{
     font-weight: 400;
 }
@@ -336,6 +340,10 @@ hr{
 }
 #friendTab-linebreak{
     margin-top: 2%;
+}
+.friendTab-friends-list{
+    background-color: white;
+    padding: 5px;
 }
 .user-profile-photo-wrap{
     float: left;
