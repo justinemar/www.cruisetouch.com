@@ -6,7 +6,7 @@ var close = false;
 var $banner = document.getElementById('banner');
 document.getElementById("banner-content").onclick = function(){
     if(close===false){
-    $banner.style.marginLeft = "-330px";
+    $banner.style.marginLeft = "-90%";
     $banner.style.opacity = '0.1';
     close = true;
     }else if(close===true){
