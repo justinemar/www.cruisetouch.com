@@ -1,6 +1,6 @@
 body{
     font-family: 'Segoe UI','Sans-serif';
-    
+
 }
 *{
     -webkit-box-sizing: border-box;
@@ -8,7 +8,7 @@ body{
     box-sizing: border-box;
     margin:0;
     padding:0;
-    overflow: hidden; 
+    overflow: hidden;
 }
 a{
     text-decoration: underline;
@@ -44,14 +44,12 @@ p{
     margin: 0 auto;
     height: 100%;
 }
-#banner-content:focus{
-    
-}
+
 #desc{
-    margin: 0 auto;
-    width: 280px;
-    color: #ffffff;
-    margin-bottom: 4%;
+  margin: 0 auto;
+  width: 280px;
+  color: #ffffff;
+
 }
 #signup-notice{
     margin: 0 auto;
@@ -78,10 +76,22 @@ p{
     font-size: 1.9em;
     margin-top: 100px;
     color: #ffffff;
+    font-family: sans-serif;
+}
+.border{
+    border: 1px solid grey;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.17);
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 90%;
+    height: 59%;
 }
 .form-box{
     width: 230px;
     margin: 0 auto;
+
 }
 .form-box h5{
     margin-top: 50px;
@@ -104,6 +114,7 @@ input[type="text"],input[type="password"]{
     width: 100%;
     height: 30px;
     border:0;
+    border-radius: 5px;
 }
 
 
